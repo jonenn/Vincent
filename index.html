@@ -3,20 +3,22 @@
     <head>
         <!--<meta charset="UTF-8">-->
         <title>Vincent van Goghs</title>
+        <link rel="icon" type="image/png" href="./images/favicon.png">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <img src="img.png" alt="">
+            <img src="./images/Vincent.png" alt="" height="115px">
+        </header>
+        <div class="container">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tweets.html">Tweets</a></li>
                 </ul>
             </nav>
-        </header>
         <main>
-        <div class="posts">
+        <section class="posts">
             <h1>Bio</h1>
             <h2>30 March 1853</h2>
             <p>Vincent Willem van Gog was a Dutch painter, 
@@ -27,15 +29,21 @@
                 <p>He left the school by the time he was fifteen; he also took pride in 
                     beign self-taught for the rest of his life in terms of art. It is also 
                     well-known that his active period as a painter was onlyten years.</p>
-        </div>
-        <aside>
-            <div class="comments">
-            <p>He left the school by the time he was fifteen; he also took pride in 
-                beign self-taught for the rest of his life in terms of art. It is also 
-                well-known that his active period as a painter was onlyten years.</p>
-            </div>
-        </aside>
+        </section>
+        <section class="r-column">
+            <article class="column-box">
+                <p class="box-title"><strong>Leave us a comment!</strong></p>
+            </article>
+            <article class="column-box">
+            <p class="box-title">Leave us your e-mail:</p>
+            <section class="mail-form">
+            <input type="email" id="email">
+            <input type="button" id="send" value="go">
+            </section>
+            </article>
+        </section>
         </main>
-        <footer><center>Made by Juan J. Malaver</center></footer>
+        <footer>Made by Juan J. Malaver</footer>
+    </div>
     </body>
 </html>

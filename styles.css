@@ -5,18 +5,26 @@ body{
     background-color: #F5F2F2;
     display: flex;
     flex-direction: column;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.container{
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    overflow: auto;
 }
 
 header{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav{
@@ -24,21 +32,28 @@ nav{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 5px solid #638FFF;
+    box-shadow: inherit;
+    
 }
 
 nav ul{
     margin: 0;
     padding: 15px;
+    padding-left: 20px;
+    text-align: center;
 }
 
 nav ul li{
     display: inline;
+    margin: 20px;
+    margin-left: 0;
 }
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: white; 
     font-weight: bold;
+    color: #F5F2F2;
 }
 
 main{   
@@ -49,29 +64,58 @@ main{
 
 .posts{
     background-color: white;
-    border-top-left-radius: 5px;
     flex: 3;
     padding: 15px 20px;
 }
 
-aside{
+.r-column{
     display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: white;
+    border-style: none;
+    width: 100%;
 }
 
-.comments{
+.column-box{
     padding: 25px 20px;
     background-color: #FAFAFA;
-    margin: 10px;
+    margin: 7px 10px;
     margin-left: 0;
     border-radius: 1px;
 }
 
+.box-title{
+    text-align: center;
+}
+
+.mail-form{
+    border-radius: 10px;
+    border: 1px solid #638FFF;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+
+#email{
+    border: 1px solid transparent;
+    align-items: center;
+    flex: 8;
+    outline: none;
+    padding-left: 8px;
+}
+
+#send{
+    border: 1px solid transparent;
+    flex: 1;
+    background-color: #638FFF;
+    color: white;
+}
+
 footer{
-    align-content: center;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+    text-align: center;
     padding: 10px;
     color: #F5F2F2;
     background-color: #333333;
