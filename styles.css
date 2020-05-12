@@ -1,4 +1,3 @@
-/*shadows*/
 body{
     max-width: 1000px;
     margin: auto;
@@ -22,7 +21,7 @@ body{
 }
 
 header{
-    display: block;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
 }
@@ -33,25 +32,24 @@ nav{
     border-top-right-radius: 5px;
     border-bottom: 5px solid #638FFF;
     box-shadow: inherit;
-    
 }
 
 nav ul{
     margin: 0;
-    padding: 15px;
-    padding-left: 20px;
+    padding: 12px;
     text-align: center;
+    height: auto;
 }
 
 nav ul li{
-    display: inline;
-    margin: 20px;
-    margin-left: 0;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 nav ul li a{
+    display: block;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: white; 
     font-weight: bold;
     color: #F5F2F2;
 }
@@ -63,9 +61,16 @@ main{
 }
 
 .posts{
+    font-family: 'Roboto', sans-serif;
     background-color: white;
     flex: 3;
-    padding: 15px 20px;
+    padding: 15px 30px;
+}
+
+.profilepic{
+    object-fit: cover;
+    float: left;
+    margin-right: 15px;
 }
 
 .r-column{
@@ -85,7 +90,7 @@ main{
     border-radius: 1px;
 }
 
-.box-title{
+.box-txt{
     text-align: center;
 }
 
