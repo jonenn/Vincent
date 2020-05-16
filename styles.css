@@ -64,13 +64,19 @@ main{
     font-family: 'Roboto', sans-serif;
     background-color: white;
     flex: 3;
-    padding: 15px 30px;
+    padding: 15px 30px 30px;
 }
 
 .profilepic{
     object-fit: cover;
     float: left;
     margin-right: 15px;
+}
+
+.twitter-tweet-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .r-column{
@@ -95,21 +101,25 @@ main{
 }
 
 .mail-form{
-    border-radius: 10px;
-    border: 1px solid #638FFF;;
     display: flex;
-    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #638FFF;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
 
 #email{
     border: 1px solid transparent;
-    align-items: center;
     flex: 8;
     outline: none;
-    padding-left: 8px;
+    background-image: url('./images/envelope.svg');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 7px;
+    text-indent: 25px;
+    padding-bottom: 3px;
 }
 
 #send{
@@ -117,6 +127,7 @@ main{
     flex: 1;
     background-color: #638FFF;
     color: white;
+    padding-bottom: 3px;
 }
 
 footer{
