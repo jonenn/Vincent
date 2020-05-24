@@ -58,6 +58,7 @@ main{
     display: flex;
     flex-direction: row;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .posts{
@@ -77,6 +78,14 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#twitter-widget-0{
+    width: auto !important;
+}
+
+#twitter-widget-1{
+    width: auto !important;
 }
 
 .r-column{
