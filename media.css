@@ -3,6 +3,9 @@
     border-bottom-right-radius: initial;
 }
 
+.headerImage{
+    margin: 2vh;
+}
 
 nav{
     border-top-left-radius: initial;
@@ -17,4 +20,8 @@ nav{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.column-box{
+    margin: 7px 10px;
 }
